@@ -6,7 +6,6 @@ HALL_STOPS = [0, 1, 3, 5, 7, 9, 10]
 
 
 def parse_input(lines):
-
     lines = [line for line in lines if line.strip()]
 
     hallway_line = None
@@ -197,7 +196,6 @@ def solve(lines):
 
 
 def main():
-
     try:
         with open('input.txt', 'r', encoding='utf-8') as file:
             lines = [line.rstrip('\n') for line in file]

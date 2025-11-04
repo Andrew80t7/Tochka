@@ -12,7 +12,6 @@ def parse_input(lines):
         a, sep, b = s.partition('-')
         if sep:
             edges.append((a, b))
-    # print(edges)
     return edges
 
 
@@ -21,7 +20,6 @@ def make_adj(canon_edges):
     for u, v in canon_edges:
         adj.setdefault(u, set()).add(v)
         adj.setdefault(v, set()).add(u)
-    print(adj)
     return adj
 
 
